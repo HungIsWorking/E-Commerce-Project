@@ -1,0 +1,89 @@
+<?php /** @var \Flshop\EconomicNews\Block\News $block */ ?>
+
+<div class="economic-news-section">
+    <?php
+    /** @var \Magento\Framework\Data\Collection $articles */
+    $articles = $block->getPaginatedEconomicNews(); // Get paginated collection
+    $pagination = $block->getPaginationData(); // Get pagination data
+    ?>
+
+    <?php if ($articles->getSize()): ?>
+
+        <div class="news-list">
+            <?php foreach ($articles as $article): ?>
+                <div class="news-item">
+                    <?php if (!empty($article['image'])): ?>
+                        <div class="news-item__image">
+                            <a href="<?php echo $this->escapeUrl($article['link']); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo $this->escapeHtmlAttr($article['title']); ?>">
+                                <img src="<?php echo $this->escapeUrl($article['image']); ?>" alt="<?php echo $this->escapeHtmlAttr($article['title']); ?>" loading="lazy" />
+                            </a>
+                        </div>
+                    <?php endif; ?>
+
+                    <div class="news-item__content">
+                        <h2 class="news-item__title">
+                            <a href="<?php echo $this->escapeUrl($article['link']); ?>" target="_blank" rel="noopener noreferrer">
+                                <?php echo $this->escapeHtml($article['title']); ?>
+                            </a>
+                        </h2>
+                        <p class="news-item__description">
+                            <?php echo $this->escapeHtml($article['description']); ?>
+                        </p>
+                        <div class="news-item__meta">
+                            <span class="news-item__date">
+                                <?php echo $this->formatDate($article['pubDate'], \IntlDateFormatter::LONG); ?>
+                            </span>
+                            <a href="<?php echo $this->escapeUrl($article['link']); ?>" target="_blank" rel="noopener noreferrer" class="news-item__read-more">
+                                <?php echo __('Đọc thêm'); ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+
+        <!-- Custom Pagination Controls -->
+        <div class="custom-pager">
+                <?php if ($pagination['total_pages'] > 1): ?>
+                <ul class="pagination">
+                    <!-- Previous Page Link -->
+                    <?php if ($pagination['current_page'] > 1): ?>
+                        <li class="page-item">
+                            <a class="page-link" href="<?php echo $block->getPagerUrl($pagination['current_page'] - 1); ?>" aria-label="<?php echo __('Previous'); ?>">
+                                <i class="fa fa-angle-left"></i> <!-- Font Awesome icon -->
+                            </a>
+                        </li>
+                    <?php endif; ?>
+                            
+                    <!-- Page Number Links -->
+                    <?php
+                    // Hiển thị tối đa 5 số trang gần hiện tại để tránh quá nhiều số trang
+                    $startPage = max(1, $pagination['current_page'] - 2);
+                    $endPage = min($pagination['total_pages'], $pagination['current_page'] + 2);
+                    for ($i = $startPage; $i <= $endPage; $i++): ?>
+                        <li class="page-item <?php if ($i == $pagination['current_page']) echo 'active'; ?>">
+                            <?php if ($i == $pagination['current_page']): ?>
+                                <span class="page-link"><?php echo $i; ?></span>
+                            <?php else: ?>
+                                <a class="page-link" href="<?php echo $block->getPagerUrl($i); ?>"><?php echo $i; ?></a>
+                            <?php endif; ?>
+                        </li>
+                    <?php endfor; ?>
+
+                    <?php if ($pagination['current_page'] < $pagination['total_pages']): ?>
+                        <li class="page-item">
+                            <a class="page-link" href="<?php echo $block->getPagerUrl($pagination['current_page'] + 1); ?>" aria-label="<?php echo __('Next'); ?>">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    <?php endif; ?>
+                </ul>
+            <?php endif; ?>
+        </div>
+
+    <?php else: ?>
+        <div class="no-news">
+            <p><?php echo __('No economic news available at the moment.'); ?></p>
+        </div>
+    <?php endif; ?>
+</div>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+        <bizkicksettings>
+            <htinformation>
+                <activationproductsku>M2HTBK</activationproductsku>
+            </htinformation>
+            <navigation_settings>
+                <enable>1</enable>
+            </navigation_settings>
+            <promotion_settings>
+                <enable_promotion>0</enable_promotion>
+                <promotion_text></promotion_text>
+            </promotion_settings>
+            <category_settings>
+                <show_border>0</show_border>
+                <show_new_label>0</show_new_label>
+                <show_sale_label>0</show_sale_label>
+            </category_settings>
+            <product_settings>
+                <show_new_label>0</show_new_label>
+                <show_sale_label>0</show_sale_label>
+            </product_settings>
+            <newsletter_settings>
+                <enable>1</enable>
+                <title>Đăng Ký Nhận Bản Tin</title>
+                <title>Đăng Ký Nhận Bản Tin</title>
+                <newsletter_static>footer-socials</newsletter_static>
+            </newsletter_settings>
+            <footer_columns>
+                <enable_footer_columns>1</enable_footer_columns>
+                <footer_st_column_select>staticblock</footer_st_column_select>
+                <footer_st_column>footer_quicklinks</footer_st_column>
+                <footer_nd_column>footer_myaccount</footer_nd_column>
+                <footer_rd_column>footer_payment_shipping</footer_rd_column>
+            </footer_columns>
+            <footer_contant>
+                <address> 144 Xuân Thủy, Cầu Giấy, Hà Nội </address>
+                <email>flshop166@gmail.com</email>
+                <phone>+84 886 698 386</phone>
+            </footer_contant>
+            <footer_bottom>
+                <enable_footer_bottom>1</enable_footer_bottom>
+                <copyright_text>Flshop.me</copyright_text>
+                <copyright_right_block>payment-icons</copyright_right_block>
+            </footer_bottom>
+            <customcss>
+                <custom_css></custom_css>
+            </customcss>
+        </bizkicksettings>
+    </default>
+</config>

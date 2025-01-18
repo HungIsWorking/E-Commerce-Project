@@ -1,0 +1,337 @@
+/* File: app/code/Flshop/EconomicNews/view/frontend/web/css/economicnews.css */
+
+/* Root Variables for Christmas Styling */
+:root {
+    --primary-color: #000000; /* Bright red for Christmas */
+    --secondary-color: rgb(211, 59, 59); /* Green for Christmas */
+    --background-color: #FFFFFF; /* Snowy white background */
+    --card-bg-color: #def4e4; /* Beige for warmth */
+    --card-border-color: #D2691E; /* Chocolate border for a cozy look */
+    --text-color: #000000; /* Black text for readability */
+    --text-secondary-color: #2f6b37; /* Dark olive green for accents */
+    --text-muted-color: #A9A9A9; /* Grey muted text */
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+    --box-shadow-hover: 0 4px 12px rgba(255, 0, 0, 0.3); /* Soft red shadow */
+    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color); /* Snowy white */
+    color: var(--text-color); /* Main text color */
+    background-image: url('path-to-your-snow-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Economic News Section Container */
+.economic-news-section {
+    padding: 40px 20px;
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid var(--card-border-color); /* Festive border */
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* News List Layout */
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Individual News Item Card */
+.news-item {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--transition-speed), transform var(--transition-speed);
+}
+
+.news-item:hover {
+    box-shadow: var(--box-shadow-hover);
+    transform: translateY(-5px);
+}
+
+/* News Item Image */
+.news-item__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 200px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+/* News Item Content */
+.news-item__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* News Item Title */
+.news-item__title {
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.news-item__title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-speed);
+}
+
+.news-item__title a:hover {
+    color: #B22222; /* Darker red */
+    text-decoration: underline;
+}
+
+/* News Item Description */
+.news-item__description {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: var(--text-secondary-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* News Item Meta Information */
+.news-item__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--text-muted-color);
+}
+
+/* Read More Link */
+.news-item__read-more {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+.news-item__read-more:hover {
+    color: #006400; /* Darker green */
+    text-decoration: underline;
+}
+
+/* No News Message */
+.no-news {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary-color);
+    margin-top: 50px;
+}
+
+/* Custom Pagination Controls */
+.custom-pager {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.custom-pager .pagination {
+    display: inline-flex;
+    list-style: none;
+    padding-left: 0;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-pager .pagination li {
+    margin: 0;
+    display: flex;
+}
+
+.custom-pager .pagination li a,
+.custom-pager .pagination li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    width: auto;
+    height: auto;
+    line-height: 1.5;
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 1px solid var(--card-border-color);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    border-radius: 0;
+}
+
+.custom-pager .pagination li a[aria-label="Previous"],
+.custom-pager .pagination li a[aria-label="Next"] {
+    padding: 10px 15px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-pager .pagination li a:hover {
+    background-color: #7b0707;
+    color: #fff;
+}
+
+.custom-pager .pagination li.active a {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+    cursor: default;
+}
+
+.custom-pager .pagination li.disabled a {
+    color: var(--text-muted-color);
+    cursor: not-allowed;
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+}
+
+/* Arrow Icons for Previous and Next Buttons */
+.custom-pager .pagination li a[aria-label="Previous"]::before,
+.custom-pager .pagination li a[aria-label="Next"]::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.custom-pager .pagination li a[aria-label="Previous"]::before {
+    border-width: 5px 8px 5px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
+}
+
+.custom-pager .pagination li a[aria-label="Next"]::after {
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent var(--primary-color);
+}
+
+.custom-pager .pagination li.disabled a[aria-label="Previous"]::before,
+.custom-pager .pagination li.disabled a[aria-label="Next"]::after {
+    border-color: transparent #D3D3D3 transparent transparent;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .news-list {
+        gap: 20px;
+    }
+
+    .news-item {
+        max-width: 100%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .news-item__title {
+        font-size: 1.25rem;
+    }
+
+    .news-item__description {
+        font-size: 0.95rem;
+    }
+
+    .news-item__meta {
+        font-size: 0.85rem;
+    }
+
+    .news-item__read-more {
+        font-size: 0.85rem;
+    }
+
+    .custom-pager .pagination li a,
+    .custom-pager .pagination li span {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        background-color: var(--background-color);
+        border: 1px solid var(--card-border-color);
+        border-radius: 0;
+    }
+
+    .custom-pager .pagination li a[aria-label="Previous"],
+    .custom-pager .pagination li a[aria-label="Next"] {
+        padding: 8px 12px;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom-pager .pagination li a[aria-label="Previous"]::before,
+    .custom-pager .pagination li a[aria-label="Next"]::after {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .news-item__title {
+        font-size: 1.1rem;
+    }
+
+    .news-item__description {
+        font-size: 0.9rem;
+    }
+
+    .news-item__meta {
+        font-size: 0.8rem;
+    }
+
+    .custom-pager .pagination li a,
+    .custom-pager .pagination li span {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        border-radius: 0;
+    }
+
+    .custom-pager .pagination li a[aria-label="Previous"],
+    .custom-pager .pagination li a[aria-label="Next"] {
+        padding: 6px 10px;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom-pager .pagination li a[aria-label="Previous"]::before,
+    .custom-pager .pagination li a[aria-label="Next"]::after {
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+}

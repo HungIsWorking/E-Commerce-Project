@@ -1,0 +1,369 @@
+title,page_layout,meta_keywords,meta_description,identifier,content_heading,content,is_active,sort_order,layout_update_xml,custom_theme,custom_root_template,custom_layout_update_xml,custom_theme_from,custom_theme_to,stores
+Flshop,1column,,,home,,"<span class=""display:none;""></span>",1,,,,,,,,0
+Điều khoản sử dụng,Page -- Full Width,,,dieu-khoan-su-dung,,"<!DOCTYPE html>
+<html lang=""vi"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Điều khoản Sử dụng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            color: #004936;
+        }
+        h1 {
+            text-align: center;
+            color: #004936;
+        }
+        h2 {
+            color: #004936;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class=""container"">
+        <h1>Điều khoản Sử dụng</h1>
+        <p>Chào mừng bạn đến với website Flshop-thời trang chính hãng. Khi truy cập và sử dụng website này, bạn đồng ý tuân thủ các điều khoản và điều kiện dưới đây:</p>
+
+        <h2>1. Chấp nhận Điều khoản</h2>
+        <p>Khi sử dụng dịch vụ của chúng tôi, bạn đồng ý với các điều khoản được quy định trong tài liệu này. Nếu bạn không đồng ý với bất kỳ điều khoản nào, vui lòng ngừng sử dụng website.</p>
+
+        <h2>2. Sử dụng Dịch vụ</h2>
+        <ul>
+            <li>Người sử dụng website phải chịu trách nhiệm với hành động của mình.</li>
+            <li>Không được phép sử dụng website để thực hiện các hành vi bất hợp pháp.</li>
+        </ul>
+
+        <h2>3. Thông tin Sản phẩm</h2>
+        <ul>
+            <li>Chúng tôi cam kết cung cấp thông tin chính xác nhất về sản phẩm. Tuy nhiên, trong một số trường hợp, có thể có lỗi sai sót hoặc thông tin không đầy đủ.</li>
+            <li>Hình ảnh sản phẩm chỉ mang tính chất minh họa. Màu sắc thực tế có thể khác so với hình ảnh trên màn hình.</li>
+        </ul>
+
+        <h2>4. Giá cả và Thanh toán</h2>
+        <ul>
+            <li>Tất cả giá hiển thị đã bao gồm hoặc chưa bao gồm thuế, tùy thuộc vào quy định.</li>
+            <li>Chúng tôi có quyền thay đổi giá mà không cần thông báo trước.</li>
+            <li>Khách hàng chịu trách nhiệm cung cấp thông tin thanh toán chính xác và cập nhật.</li>
+        </ul>
+
+        <h2>5. Chính sách Đổi/Trả</h2>
+        <p>Chúng tôi chấp nhận đổi hoặc trả sản phẩm trong vòng 7 ngày kể từ ngày nhận hàng, với điều kiện sản phẩm còn nguyên tem, nhãn mác và chưa qua sử dụng.</p>
+
+        <h2>6. Bảo mật Thông tin</h2>
+        <p>Thông tin cá nhân của bạn sẽ được bảo mật theo chính sách bảo mật của chúng tôi. Chúng tôi không chia sẻ thông tin cá nhân của bạn cho bên thứ ba mà không có sự đồng ý của bạn.</p>
+
+        <h2>7. Quyền Sở hữu Trí tuệ</h2>
+        <p>Tất cả nội dung, hình ảnh và thương hiệu trên website thuộc sở hữu của chúng tôi hoặc bên thứ ba được cấp phép. Bạn không được phép sao chép, sử dụng mà không có sự đồng ý bằng văn bản từ chúng tôi.</p>
+
+        <h2>8. Thay đổi Điều khoản</h2>
+        <p>Chúng tôi có quyền thay đổi, cập nhật điều khoản sử dụng bất kỳ lúc nào. Việc tiếp tục sử dụng website sau khi có thay đổi đồng nghĩa với việc bạn chấp nhận các điều khoản mới.</p>
+
+        <p>Nếu có bất kỳ câu hỏi nào về điều khoản sử dụng, vui lòng liên hệ với chúng tôi qua email: <strong>flshop166@gmail.com</strong> hoặc hotline: <strong>0886 698 386</strong>.</p>
+    </div>
+    <div class=""center"">
+        <img src=""{{media url=.renditions/catalog/category/logo_3_.png}}"" alt="""" />
+    </div>
+</body>
+</html>
+",1,,,,,,,,0
+Phương thức thanh toán,Page -- Full Width,,,thanh-toan,,"<!DOCTYPE html>
+<html lang=""vi"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Phương thức Thanh toán</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #004936;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #004936;
+        }
+        .method {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+        }
+        .method h2 {
+            margin-top: 0;
+            color: #004936;
+        }
+        .method p {
+            margin: 10px 0;
+        }
+        .icon {
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .icon img {
+            width: 40px;
+            height: 40px;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class=""container"">
+        <h1>Phương thức Thanh toán</h1>
+
+        <div class=""method"">
+            <h2><span class=""icon""><img src=""{{media url=.renditions/catalog/category/ti_n_m_t.png}}"" alt=""Cash""></span> Thanh toán khi nhận hàng</h2>
+            <p>Bạn có thể thanh toán bằng tiền mặt khi nhận được sản phẩm. Đơn hàng của bạn sẽ được giao đến tận nơi, và bạn chỉ cần thanh toán cho nhân viên giao hàng.</p>
+        </div>
+
+        <div class=""method"">
+            <h2><span class=""icon""><img src=""{{media url=.renditions/catalog/category/momo.png}}"" alt=""Momo""></span> Thanh toán qua Momo</h2>
+            <p>Sử dụng ví điện tử Momo để thanh toán nhanh chóng và an toàn. Bạn chỉ cần quét mã QR để hoàn tất giao dịch.</p>
+        </div>
+
+        <div class=""method"">
+            <h2><span class=""icon""><img src=""{{media url=.renditions/catalog/category/zalopay.png}}"" alt=""ZaloPay""></span> Thanh toán qua ZaloPay</h2>
+            <p>Chọn ZaloPay để thanh toán một cách tiện lợi. Bạn chỉ cần quét mã QR để hoàn tất giao dịch.</p>
+        </div>
+
+        <div class=""method"">
+            <h2><span class=""icon""><img src=""{{media url=.renditions/catalog/category/vnpay.png}}"" alt=""VNPay""></span> Thanh toán qua VNPay</h2>
+            <p>VNPay hỗ trợ thanh toán trực tuyến thông qua mã QR và các tài khoản ngân hàng liên kết. Chọn VNPay để thanh toán nhanh và dễ dàng.</p>
+        </div>
+    </div>
+    <div class=""center"">
+        <img src=""{{media url=.renditions/catalog/category/logo_3_.png}}"" alt="""" />
+    </div>
+</body>
+</html>",1,,,,,,,,0
+Hướng dẫn vận chuyển,Page -- Full Width,,,huong-dan-van-chuyen,,"<!DOCTYPE html>
+<html lang=""vi"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Hướng dẫn Vận chuyển</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #004936;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #004936;
+        }
+        h2 {
+            color: #004936;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .resize-image {
+            width: 50%; 
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class=""container"">
+        <h1>Hướng dẫn Vận chuyển</h1>
+
+        <h2>1. Phương thức Giao hàng</h2>
+        <p><strong>Xanh Express-giao hàng siêu tốc</strong>: Đơn hàng của bạn sẽ được giao trong vòng 3-5 ngày làm việc, tùy thuộc vào vị trí của bạn.</p>
+
+        <h2>2. Quy trình Vận chuyển</h2>
+        <p>Chúng tôi sẽ xử lý đơn hàng của bạn ngay sau khi thanh toán thành công:</p>
+        <ul>
+            <li>Kiểm tra và xác nhận đơn hàng.</li>
+            <li>Đóng gói sản phẩm đảm bảo an toàn.</li>
+            <li>Chuyển giao đơn hàng cho đơn vị vận chuyển.</li>
+        </ul>
+
+        <h2>3. Phí Vận chuyển</h2>
+        <p>Phí ship 10.000 đồng cho toàn bộ đơn hàng</p>
+
+        <h2>4. Kiểm tra và Nhận hàng</h2>
+        <p>Vui lòng kiểm tra kỹ sản phẩm khi nhận hàng để đảm bảo:</p>
+        <ul>
+            <li>Sản phẩm đúng với đơn đặt hàng.</li>
+            <li>Sản phẩm không bị hư hỏng trong quá trình vận chuyển.</li>
+        </ul>
+        <p>Nếu phát hiện bất kỳ vấn đề nào, hãy liên hệ với chúng tôi ngay lập tức qua hotline hoặc email hỗ trợ.</p>
+
+        <h2>5. Theo dõi Đơn hàng</h2>
+        <p>Bạn có thể theo dõi tình trạng đơn hàng bằng cách sử dụng mã vận đơn được cung cấp qua email hoặc tin nhắn sau khi đơn hàng được xử lý.</p>
+
+        <h2>6. Chính sách Giao hàng</h2>
+        <ul>
+            <li>Chúng tôi chỉ giao hàng trong lãnh thổ Việt Nam.</li>
+            <li>Thời gian giao hàng có thể bị ảnh hưởng bởi các yếu tố ngoài ý muốn như thiên tai, dịch bệnh hoặc yêu cầu từ chính quyền địa phương.</li>
+        </ul>
+
+        <p>Nếu bạn có bất kỳ câu hỏi nào về vận chuyển, vui lòng liên hệ với chúng tôi qua email: <strong>flshop166@gmail.com</strong> hoặc hotline: <strong>0886 698 386</strong>.</p>
+    </div>
+    <div class=""center"">
+        <img src=""https://cdn.xanhsm.com/2023/11/0cdf2301-20231611_comm_anh-quy-trinh-01.png"" alt="""" class=""resize-image"" />
+    </div>
+    <div class=""center"">
+        <img src=""{{media url=.renditions/catalog/category/logo_3_.png}}"" alt="""" />
+    </div>
+</body>
+</html>
+<div class=""image-overlay"">
+    <div class=""overlay""></div>
+    <img src=""{{media url=.renditions/catalog/category/momo_icon_vertical_pink_1_.png}}"" alt="""" style=""display: none;""/>
+    <img src=""{{media url=.renditions/catalog/category/MoMo_Logo.png}}"" alt="""" style=""display: none;""/>
+    <img src=""{{media url=.renditions/catalog/category/atm_logo.png}}"" alt="""" style=""display: none;""/>
+    <img src=""{{media url=.renditions/catalog/category/credit_card_logo.png}}"" alt="""" style=""display: none;""/>
+</div>
+
+<style>
+.image-overlay {
+    position: relative;
+    width: 100%; 
+    height: auto; 
+    background-color: #fff; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
+</style>
+",1,,,,,,,,0
+Hoàn hàng & Đổi trả,Page -- Full Width,,,hoan-hang-doi-tra,,"<!DOCTYPE html>
+<html lang=""vi"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Chính sách Hoàn hàng và Đổi trả</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #004936;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #004936;
+        }
+        h2 {
+            color: #004936;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class=""container"">
+        <h1>Chính sách Hoàn hàng và Đổi trả</h1>
+
+        <h2>1. Điều kiện Hoàn hàng và Đổi trả</h2>
+        <ul>
+            <li>Sản phẩm còn nguyên vẹn, chưa qua sử dụng, còn đầy đủ tem, nhãn mác.</li>
+            <li>Yêu cầu hoàn hàng hoặc đổi trả được thực hiện trong vòng 7 ngày kể từ ngày nhận hàng.</li>
+            <li>Hóa đơn hoặc bằng chứng mua hàng phải được cung cấp khi yêu cầu đổi trả.</li>
+        </ul>
+
+        <h2>2. Các trường hợp được Đổi trả</h2>
+        <ul>
+            <li>Sản phẩm bị lỗi do nhà sản xuất.</li>
+            <li>Sản phẩm không đúng với đơn đặt hàng (sai màu, sai kích thước, sai mẫu mã).</li>
+            <li>Sản phẩm bị hư hỏng trong quá trình vận chuyển.</li>
+        </ul>
+
+        <h2>3. Quy trình Hoàn hàng và Đổi trả</h2>
+        <ol>
+            <li>Liên hệ với bộ phận chăm sóc khách hàng qua email: <strong>support@example.com</strong> hoặc hotline: <strong>0886 698 386</strong>.</li>
+            <li>Cung cấp thông tin chi tiết về sản phẩm và lý do đổi trả.</li>
+            <li>Gửi sản phẩm về địa chỉ: 144 Xuân Thủy, Cầu Giấy, Hà Nội.</li>
+            <li>Chờ xác nhận từ chúng tôi và hoàn tất quy trình hoàn tiền hoặc gửi sản phẩm thay thế.</li>
+        </ol>
+
+        <h2>4. Chi phí Hoàn hàng</h2>
+        <ul>
+            <li>Chúng tôi sẽ chịu phí vận chuyển đổi trả nếu lỗi thuộc về nhà sản xuất hoặc vận chuyển.</li>
+            <li>Khách hàng chịu phí vận chuyển trong trường hợp đổi trả vì lý do cá nhân.</li>
+        </ul>
+
+        <h2>5. Phương thức Hoàn tiền</h2>
+        <p>Tiền sẽ được hoàn lại qua hình thức thanh toán ban đầu của bạn trong vòng 10-15 ngày làm việc sau khi yêu cầu được xử lý.</p>
+
+        <h2>6. Liên hệ</h2>
+        <p>Để biết thêm thông tin, vui lòng liên hệ với chúng tôi qua email: <strong>support@example.com</strong> hoặc hotline: <strong>0886 698 386</strong>.</p>
+
+    </div>
+    <div class=""center"">
+        <img src=""{{media url=.renditions/catalog/category/logo_3_.png}}"" alt="""" />
+    </div>
+</body>
+</html>
+",1,,,,,,,,0

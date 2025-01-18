@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Hiddentechies_Bizkick::css/owl.carousel.css"/>
+        <css src="Hiddentechies_Bizkick::css/owl.theme.css"/>
+        <css src="Hiddentechies_Bizkick::css/owl.transitions.css"/>
+        <css src="Hiddentechies_Bizkick::css/fancybox/jquery.fancybox.css"/>
+        <css src="Hiddentechies_Bizkick::css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="header.contact.info" template="Hiddentechies_Bizkick::headerinfo.phtml" after="top.search" />
+        </referenceContainer>
+        <referenceContainer name="after.body.start">
+            <block class="Magento\Framework\View\Element\Template" name="top.promotion.block" template="Hiddentechies_Bizkick::promotion.phtml" before="global_notices"/>
+        </referenceContainer>
+        <referenceContainer name="head.additional">
+            <block class="Magento\Framework\View\Element\Template" name="custom.css" template="Hiddentechies_Bizkick::customcss.phtml" before="-"/>
+        </referenceContainer>
+        <referenceContainer name="footer-container">
+            <block class="Magento\Framework\View\Element\Template" as="bizkick.footer" name="bizkick.footer" template="Hiddentechies_Bizkick::html/footer.phtml">
+                <block class="Magento\Framework\View\Element\Html\Links" name="footer_links">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">footer links</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Theme\Block\Html\Footer" name="copyright" template="html/copyright.phtml"/>
+            </block>
+            <referenceBlock name="report.bugs" remove="true"/>
+            <referenceBlock name="footer" remove="true"/>
+            <referenceContainer name="copyright" remove="true"/>
+        </referenceContainer>
+        <referenceContainer name="page.wrapper">
+            <block class="Magento\Framework\View\Element\Template" as="blzkick.above" name="blzkick.above" template="Hiddentechies_Bizkick::bizkickabove.phtml" before="main.content" />
+            <block class="Magento\Framework\View\Element\Template" as="blzkick.below" name="blzkick.below" template="Hiddentechies_Bizkick::bizkickbelow.phtml" after="main.content" />
+        </referenceContainer>
+        <referenceBlock name="wish-list-link" remove="true"/>
+    </body>
+</page>

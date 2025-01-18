@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/system_file.xsd">
+    <system>
+        <tab id="hiddentechies" translate="label" sortOrder="500">
+            <label>Hiddentechies</label>
+        </tab>         
+        <section id="bizkicksettings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Bizkick Settings</label>
+            <tab>hiddentechies</tab>
+            <resource>Hiddentechies_Bizkick::configurations</resource>
+            <group id="htinformation" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product Information</label>
+                <attribute type="expanded">1</attribute>
+                <field id="product_info" translate="label comment" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <frontend_model>Hiddentechies\Base\Block\Adminhtml\System\Config\Form\Info</frontend_model>
+                </field>
+            </group>
+            <group id="navigation_settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Navigation Settings</label>
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Add Home Link</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="promotion_settings" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Promotion Settings</label>
+                <field id="enable_promotion" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Promotion Bar</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="promotion_text" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Top Promotion Text</label>
+                    <depends>
+                        <field id="enable_promotion">1</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="category_settings" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Category Page</label>
+                <field id="show_border" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Image Border</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_new_label" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show New Label</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_sale_label" translate="label" type="select" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Sale Label</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="product_settings" translate="label" type="text" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product Page</label>
+                <field id="show_new_label" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show New Label</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_sale_label" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Sale Label</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="newsletter_settings" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Newsletter Settings</label>
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Newsletter</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Newsletter Title</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+                <field id="newsletter_static" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Static Block (Below Footer Newsletter)</label>
+                </field>
+            </group>
+            <group id="footer_columns" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Footer Columns</label>
+                <field id="enable_footer_columns" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Footer Columns</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="footer_st_column_select" translate="label comment" type="select" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Column 1</label>
+                    <source_model>Hiddentechies\Bizkick\Model\Config\Footercolumns</source_model>
+                </field>
+                <field id="footer_st_column" translate="label" type="text" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Static Block Identifier</label>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="footer_st_column_select">staticblock</field>
+                    </depends>
+                </field>
+                <field id="footer_nd_column" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer 2nd Column</label>
+                </field>
+                <field id="footer_rd_column" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Footer 3rd Column</label>
+                </field>
+            </group>
+            <group id="footer_contant" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Footer Contact Block</label>
+                <field id="address" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Address</label>
+                </field>
+                <field id="email" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email</label>
+                </field>
+                <field id="phone" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Phone</label>
+                </field>
+            </group>
+            <group id="footer_bottom" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Footer Copyright</label>
+                <field id="enable_footer_bottom" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Footer Bottom</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="copyright_text" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Copyright Text</label>
+                </field>
+                <field id="copyright_right_block" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Copyright Right Block</label>
+                </field>
+            </group>
+            <group id="customcss" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Add Custom CSS</label>
+                <field id="custom_css" translate="label comment" type="textarea" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Custom CSS 1</label>
+                    <comment><![CDATA[.classname { <br/> &nbsp;&nbsp;&nbsp;width: 100%; <br/>}]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

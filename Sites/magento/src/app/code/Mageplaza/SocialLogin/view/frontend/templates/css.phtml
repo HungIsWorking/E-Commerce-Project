@@ -1,0 +1,67 @@
+<?php
+/**
+ * Mageplaza
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Mageplaza.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.mageplaza.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Mageplaza
+ * @package     Mageplaza_SocialLogin
+ * @copyright   Copyright (c) Mageplaza (https://www.mageplaza.com/)
+ * @license     https://www.mageplaza.com/LICENSE.txt
+ */
+
+/** @var Css $block */
+
+/** @var \Mageplaza\SocialLogin\Helper\Data $helper */
+$helper = $block->helper();
+$color  = $helper->getStyleManagement();
+
+use Mageplaza\SocialLogin\Block\Css;
+
+?>
+<style>
+    #social-login-popup .social-login-title {
+        background-color: <?= /* @noEscape */ $color ?>
+    }
+
+    #social-login-popup .social-login #bnt-social-login-authentication,
+    #social-login-popup .forgot .primary button,
+    #social-login-popup .create .primary button,
+    #social-login-popup .fake-email .primary button {
+        background-color: <?= /* @noEscape */ $color ?>;
+        border: <?= /* @noEscape */ $color ?>
+    }
+
+    .block.social-login-authentication-channel.account-social-login .block-content {
+        text-align: center;
+    }
+
+    <?= /* @noEscape */ $helper->getCustomCss() ?>
+
+    /* Compatible ETheme_YOURstore*/
+    div#centerColumn .column.main .block.social-login-authentication-channel.account-social-login {
+        max-width: 900px !important;
+        margin: 0 auto !important;
+    }
+
+    div#centerColumn .column.main .block.social-login-authentication-channel.account-social-login .block-content {
+        text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+        div#centerColumn .column.main .block.social-login-authentication-channel.account-social-login .block-content {
+            padding: 0 15px;
+        }
+    }
+</style>
+
+<?= $block->getChildHtml() ?>

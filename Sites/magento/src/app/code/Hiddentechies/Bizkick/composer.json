@@ -1,0 +1,18 @@
+{
+    "name": "hiddentechies/bizkick",
+    "description": "HiddenTechies Bizkick Theme",
+    "type": "magento2-module",
+    "version": "2.0.4",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Hiddentechies\\Bizkick\\": ""
+        }
+    }
+}

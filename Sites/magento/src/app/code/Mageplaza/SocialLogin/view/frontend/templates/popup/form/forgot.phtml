@@ -1,0 +1,54 @@
+<?php
+/**
+ * Mageplaza
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Mageplaza.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.mageplaza.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Mageplaza
+ * @package     Mageplaza_SocialLogin
+ * @copyright   Copyright (c) Mageplaza (https://www.mageplaza.com/)
+ * @license     https://www.mageplaza.com/LICENSE.txt
+ */
+?>
+<div class="social-login block-container forgot" style="display:none">
+    <div class="social-login-title">
+        <h2 class="forgot-pass-title"><?= /* @noEscape */ __('Forgot Password') ?></h2>
+    </div>
+    <div class="block col-mp mp-12">
+        <div class="block-content">
+            <form class="form-password-forget" id="social-form-password-forget" data-mage-init='{"validation":{}}'>
+                <fieldset class="fieldset" data-hasrequired="<?= /* @noEscape */ __('* Required Fields') ?>">
+                    <div class="field note"><?= /* @noEscape */ __('Please enter your email address below to receive a password reset link.') ?></div>
+                    <div class="field email required">
+                        <label for="email_address" class="label"><span><?= /* @noEscape */ __('Email') ?></span></label>
+                        <div class="control">
+                            <input type="email" name="email" alt="email" id="email_address_forgot" class="input-text"
+                                   value="<?= $block->escapeHtml($block->getEmailValue()) ?>"
+                                   data-validate="{required:true, 'validate-email':true}"/>
+                        </div>
+                    </div>
+                    <?= $block->getChildHtml('form_additional_info') ?>
+                </fieldset>
+                <div class="actions-toolbar">
+                    <div class="primary">
+                        <button type="button" id="bnt-social-login-forgot" class="action send primary">
+                            <span><?= /* @noEscape */ __('Submit') ?></span>
+                        </button>
+                        <div class="secondary">
+                            <a class="action back" href="#"><span><?= /* @noEscape */ __('Back') ?></span></a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+/* Exchange Rate Info Container */
+.exchange-rate-info {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fffafa; /* Snow White Background */
+    border: 2px solid #228B22; /* Forest Green Border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font Added */
+}
+
+/* Adding Snowflake Decorations */
+.exchange-rate-info::before,
+.exchange-rate-info::after {
+    content: '❄️';
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.6;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font Added */
+}
+
+.exchange-rate-info::before {
+    top: 10px;
+    left: 10px;
+}
+
+.exchange-rate-info::after {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Exchange Rate Table Styling */
+.exchange-rate-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font Added */
+}
+
+.exchange-rate-table th, .exchange-rate-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font Added */
+}
+
+.exchange-rate-table th {
+    background-color: #228B22; /* Forest Green */
+    color: #fff; /* White Text */
+    font-size: 1.1em;
+    position: relative;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font Added */
+}
+
+.exchange-rate-table th::after {
+    content: '🎄';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1em;
+}
+
+.exchange-rate-table tr:nth-child(even) {
+    background-color: #f0fff0; /* Honeydew for a Light Green Shade */
+}
+
+.exchange-rate-table tr:hover {
+    background-color: #ffe4e1; /* Misty Rose for a Soft Highlight */
+    transition: background-color 0.3s ease;
+}
+
+/* Additional Festive Enhancements */
+
+h2::after {
+    content: '🎅🏻';
+    margin-left: 10px;
+    font-size: 1.2em;
+    vertical-align: middle;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font Added */
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+    .exchange-rate-table th, .exchange-rate-table td {
+        padding: 8px 10px;
+        font-size: 0.9em;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Font Added */
+    }
+}

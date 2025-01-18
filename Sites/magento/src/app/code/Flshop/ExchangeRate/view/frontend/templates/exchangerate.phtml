@@ -1,0 +1,51 @@
+<?php
+/**
+ * @var \Flshop\ExchangeRate\Block\ExchangeRate $block
+ */
+?>
+<?php
+$exchangeRates = $block->getExchangeRates();
+$errorMessage = $block->getData('error_message');
+?>
+
+<?php if ($errorMessage): ?>
+    <p><?php echo $this->escapeHtml($errorMessage); ?></p>
+<?php elseif (!empty($exchangeRates)): ?>
+    <div class="exchange-rate-info">
+        <h2>Tiền tệ mặc định: VND (Việt Nam Đồng)</h2>
+        <table class="exchange-rate-table" border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Loại tiền</th>
+                    <th>Tỷ giá mua vào</th>
+                    <th>Tỷ giá chuyển khoản</th>
+                    <th>Tỷ giá bán ra</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($exchangeRates as $currency => $rate): ?>
+                    <tr>
+                        <td><?php echo $this->escapeHtml($currency); ?></td>
+                        <td>
+                            <?php 
+                                echo isset($rate['buy']) ? number_format($rate['buy'], 2) : '-';
+                            ?>
+                        </td>
+                        <td>
+                            <?php 
+                                echo isset($rate['transfer']) ? number_format($rate['transfer'], 2) : '-';
+                            ?>
+                        </td>
+                        <td>
+                            <?php 
+                                echo isset($rate['sell']) ? number_format($rate['sell'], 2) : '-';
+                            ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+<?php else: ?>
+    <p>Không có dữ liệu tỷ giá nào vào lúc này.</p>
+<?php endif; ?>

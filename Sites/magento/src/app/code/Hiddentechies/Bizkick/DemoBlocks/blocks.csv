@@ -1,0 +1,480 @@
+title,identifier,content,is_active,stores
+Payments Icons,payment-icons,"<span class=""payment-icons"">
+    <ul>
+        <li><a href=""https://flshop.me/thanh-toan""><img class=""image-responsive middle-block"" src=""{{media url=wysiwyg/paymet/momo.png}}"" alt=""momo"" /></a></li>
+        <li><a href=""https://flshop.me/thanh-toan""><img class=""image-responsive middle-block"" src=""{{media url=wysiwyg/paymet/zalopay.png}}"" alt=""zalopay"" /></a></li>
+        <li><a href=""https://flshop.me/thanh-toan""><img class=""image-responsive middle-block"" src=""{{media url=wysiwyg/paymet/vnpay.png}}"" alt=""vnpay"" /></a></li>
+    </ul>
+</span>",1,0
+Home Slider,home-slider,"<div class=""home-slider-wrapper"">
+    <div class=""home-slider-main below-padding"">
+        <ul class=""home-slider"">
+            <li>
+                <a href=""https://flshop.me/qu-n-ao.html"">
+                    <img class=""image-responsive middle-block"" src=""{{media url=wysiwyg/slider/bizkick-home-banner-1.png}}"" alt=""home banner"" />
+                </a>
+            </li>
+            <li style=""display:none;"">
+                <a href=""https://flshop.me/giay.html"">
+                    <img class=""image-responsive middle-block"" src=""{{media url=wysiwyg/slider/bizkick-home-banner-2.png}}"" alt=""home banner"" />
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <style>
+        .home-slider-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .home-slider-main {
+            overflow: hidden;
+        }
+
+        .home-slider {
+            width: 100%;
+            height: auto;
+        }
+
+        .home-slider img {
+            width: 100%;
+            height: auto;
+            max-height: 980px;
+        }
+
+        @media (max-width: 768px) {
+            .home-slider-wrapper {
+                max-width: 100%;
+            }
+
+            .home-slider img {
+                max-height: 300px;
+            }
+        }
+    </style>
+
+    <script type=""text/javascript"">
+        require(['jquery', 'bizkickowlcarousel'], function() {
+            jQuery(document).ready(function() {
+                jQuery("".home-slider"").owlCarousel({
+                    items: 1,
+                    itemsDesktop: [1198, 1],
+                    itemsDesktopSmall: [1023, 1],
+                    itemsTablet: [768, 1],
+                    itemsTabletSmall: [767, 1],
+                    itemsMobile: [479, 1],
+                    pagination: true,
+                    navigationText: [""<div class='left-arrow'><i class='fa fa-angle-left'></i></div>"", ""<div class='right-arrow'><i class='fa fa-angle-right'></i></div>""],
+                    navigation: true,
+                });
+                jQuery("".home-slider li"").show();
+            });
+        });
+    </script>
+</div>",1,0
+Bizkick Above,bizkick-above,"{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home-slider""}}",1,0
+Home Images Block,home-images-one,"<div class=""home-images-wrapper above-padding below-padding"">
+    <div class=""page-main"">
+        <div class=""home-image-main"">
+            <div class=""home-image-inner"">
+                <a href=""https://flshop.me/giay-adidas-superstar-og-vintage-white-c77124.html"">
+                    <img class=""image-responsive middle-block"" src=""{{media url=wysiwyg/advertisement/bizkick-male-watch1.png}}"" alt=""bizkick-fashion-image"" />
+                </a>
+            </div>
+            <div class=""home-image-inner"">
+                <a href=""https://flshop.me/balo-louis-vuitton-multipocket-backpack-multicoloured-m21846.html"">
+                    <img class=""image-responsive middle-block"" src=""{{media url=wysiwyg/advertisement/bizkick-male-watch2.png}}"" alt=""bizkick-fashion-image"" />
+                </a>
+            </div>
+            <div class=""home-image-inner"">
+                <a href=""https://flshop.me/ao-nike-sportswear-faux-fur-jacket-cream-dm1760.html"">
+                    <img class=""image-responsive middle-block"" src=""{{media url=wysiwyg/advertisement/bizkick-male-watch3.png}}"" alt=""bizkick-fashion-image"" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>",1,0
+Bizkick Below,bizkick-below,"{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home-images-one""}}
+<div class=""page-main"">
+{{widget type=""Magento\Catalog\Block\Product\Widget\NewWidget"" display_type=""all_products"" show_pager=""0"" products_count=""10"" template=""product/widget/new/content/new_grid.phtml""}}
+</div>
+{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home-images-two""}}
+{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home-services""}}
+{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home_testimonials""}}
+{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home_blogs""}}
+{{widget type=""Magento\Cms\Block\Widget\Block"" template=""widget/static_block/default.phtml"" block_id=""home-brands""}}",1,0
+Home Testimonials,home_testimonials,"<div class=""hb-wrapper above-padding below-padding above-margin below-margin"">
+    <div class=""page-main"">
+        <div class=""page-title-main""><strong>Phản hồi của khách hàng</strong></div>
+        <div class=""hb-row"">
+            <div class=""hb-testimonoals"">
+                <ul id=""hb-testimonials"">
+                    <li style=""display: none;"">
+                        <div class=""hb-inner"">
+                            <div class=""hb-content"">
+                                <p>Tôi thấy trang web rất tuyệt vời, có rất nhiều sản phẩm mà tôi chưa từng thấy bao giờ.</p>
+                            </div>
+                            <div class=""hb-image"">
+                                <img src=""{{media url=wysiwyg/testimonial/testimonial-1.png}}"" alt=""testimonial-image"" />
+                                <span>
+                                    <h4>Alexander Dat Nguyen</h4>
+                                    <p>Khách hàng VIP</p>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li style=""display: none;"">
+                        <div class=""hb-inner"">
+                            <div class=""hb-content"">
+                                <p>Tôi chưa bao giờ thấy trang bán hàng nào nhiệt tình như thế này, tôi rất cảm động, tôi đã khóc.</p>
+                            </div>
+                            <div class=""hb-image"">
+                                <img src=""{{media url=wysiwyg/testimonial/testimonial-2.png}}"" alt=""testimonial-image"" />
+                                <span>
+                                    <h4>Thanbuoyoy</h4>
+                                    <p>Nhà cung cấp bán lẻ</p>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li style=""display: none;"">
+                        <div class=""hb-inner"">
+                            <div class=""hb-content"">
+                                <p>Shop cực kì uy tín, sản phẩm chất lượng, chất lượng phục vụ tốt, xứng đáng để đầu tư lâu dài.</p>
+                            </div>
+                            <div class=""hb-image"">
+                                <img src=""{{media url=wysiwyg/testimonial/testimonial-3.png}}"" alt=""testimonial-image"" />
+                                <span><h4>AHungVam</h4>
+                                    <p>Cổ đông công ty Flshop</p>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <script type=""text/javascript"" xml=""space"">
+                    require(['jquery', 'bizkickowlcarousel'], function() {
+                        jQuery(document).ready(function() {
+                            jQuery(""#hb-testimonials"").owlCarousel({
+                                items: 2,
+                                itemsDesktop: [1198, 2],
+                                itemsDesktopSmall: [1023, 2],
+                                itemsTablet: [768, 1],
+                                itemsTabletSmall: [767, 1],
+                                itemsMobile: [479, 1],
+                                pagination: false,
+                                navigationText: [""<div class='left-arrow'><i class='fa fa-angle-left'></i></div>"", ""<div class='right-arrow'><i class='fa fa-angle-right'></div>""],
+                                navigation: true,
+                            });
+                            jQuery(""#hb-testimonials li"").show();
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</div>",1,0
+Home Brands,home-brands,"<div class=""brands-wrapper above-padding below-padding"">
+    <div class=""page-main"">
+    <div class=""page-title-main""><strong>Thương hiệu nổi tiếng</strong></div>
+    <div class=""hb-row"">
+    <div class=""hb-brands"">
+        <div class=""brands-main"">
+            <ul class=""brands-slider"">
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/?q=adidas""><img src=""{{media url=wysiwyg/brand/brand-1.png}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/?q=nike""><img src=""{{media url=wysiwyg/brand/brand-2.png}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/index/?q=drew+house""><img src=""{{media url=wysiwyg/brand/brand-3.png}}"" alt=""brand-image"" /></a> </li>
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/?q=lacoste""><img src=""{{media url=wysiwyg/brand/brand-4.png}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/?q=New+Balance""><img src=""{{media url=wysiwyg/brand/brand-5.png}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/?q=louis+vuitton""><img src=""{{media url=wysiwyg/brand/brand-6.png}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/?q=MCM+Worldwide""><img src=""{{media url=wysiwyg/brand/brand-7.png}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/?q=Moschino""><img src=""{{media url=wysiwyg/brand/brand-8.png}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/?q=New+Balance+MLB""><img src=""{{media url=wysiwyg/brand/brand-9.png}}"" alt=""brand-image"" /></a></li>
+                <li style=""display: none;""><a href=""https://flshop.me/catalogsearch/result/?q=Dior""><img src=""{{media url=wysiwyg/brand/brand-10.png}}"" alt=""brand-image"" /></a></li>
+            </ul>
+            <script type=""text/javascript"" xml:space=""preserve"">
+                require(['jquery', 'bizkickowlcarousel'], function($) {
+                    $(document).ready(function() {
+                        $("".brands-slider"").owlCarousel({
+                            items: 6,
+                            itemsDesktop: [1198, 5],
+                            itemsDesktopSmall: [1023, 5],
+                            itemsTablet: [768, 4],
+                            itemsTabletSmall: [767, 4],
+                            itemsMobile: [479, 2],
+                            pagination: false,
+                            navigation: true,
+                            navigationText: [
+                                ""<div class='left-arrow'><i class='fa fa-angle-left'></i></div>"", 
+                                ""<div class='right-arrow'><i class='fa fa-angle-right'></i></div>""
+                            ]
+                        });
+                        $("".brands-slider li"").show();
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
+",1,0
+Footer My Account Block,footer_myaccount,"<div class=""footer-colum-title"">
+                                    <h3>
+                                        Tài khoản
+                                    </h3>
+                                </div>
+                                <div class=""footer-column-content"">
+<ul class=""footer links"">
+<li class=""nav item""><a href=""https://flshop.me/customer/account/"">Tài khoản người dùng</a></li>
+<li class=""nav item""><a href=""https://flshop.me/customer/account/login"">Đăng nhập và đăng ký</a></li>
+<li class=""nav item""><a href=""https://flshop.me/checkout/cart/"">Giỏ hàng cá nhân</a></li>
+<li class=""nav item""><a href=""https://flshop.me/catalog/product_compare/"">So sánh sản phẩm</a></li>
+<li class=""nav item""><a href=""https://flshop.me/wishlist/"">Danh sách sản phẩm yêu thích</a></li>
+</ul>
+</div>",1,0
+Footer Payment & Shipping,footer_payment_shipping,"<div class=""footer-colum-title"">
+                            <h3>
+                                Thanh toán & Giao hàng
+                            </h3>
+                        </div>
+                        <div class=""footer-column-content"">
+<ul class=""footer links"">
+<li class=""nav item""><a href=""https://flshop.me/dieu-khoan-su-dung"">Điều khoản sử dụng</a></li>
+<li class=""nav item""><a href=""https://flshop.me/thanh-toan"">Phương thức thanh toán</a></li>
+<li class=""nav item""><a href=""https://flshop.me/huong-dan-van-chuyen"">Hướng dẫn vận chuyển</a></li>
+<li class=""nav item""><a href=""https://flshop.me/sales/order/history/order-shipments"">Theo dõi đơn hàng</a></li>
+<li class=""nav item""><a href=""https://flshop.me/hoan-hang-doi-tra"">Hoàn hàng & Đổi trả</a></li>
+</ul>
+</div>",1,0
+Home Blogs,home_blogs,"<div class=""hb-wrapper above-padding below-padding"" style=""background: #ffffff;"">
+    <div class=""page-main"">
+        <div class=""page-title-main"">
+            <strong>Thời tiết</strong>
+            <div class=""nav-buttons"">
+                <button class=""nav-button prev"" style=""width: 29px; height: 30px;"">
+                    <i class=""fa fa-angle-left""></i>
+                </button>
+                <button class=""nav-button next"" style=""width: 29px; height: 30px;"">
+                    <i class=""fa fa-angle-right""></i>
+                </button>
+            </div>
+        </div>
+
+        <div class=""weather-container-wrapper"">
+            {{block class=""Flshop\\Weather\\Block\\Weather"" name=""current.weather"" template=""Flshop_Weather::weather.phtml""}}
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .weather-container-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .weather-container {
+        display: flex;
+        gap: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .weather-card {
+        background-color: #f9f9f9;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 20px;
+        flex: 0 0 auto;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        color: #000000; /* Text color */
+    }
+
+    .weather-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        border-color: #ff6f61;
+    }
+
+    .weather-card h2 {
+        margin-top: 0;
+        font-size: 1.4em;
+        color: #333;
+    }
+
+    .weather-card p {
+        margin: 8px 0;
+        font-size: 1em;
+        color: #666;
+    }
+
+    /* Position the nav buttons */
+    .nav-buttons {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        gap: 3px;
+        z-index: 10;
+    }
+
+    .nav-button {
+        background-color: #004936;
+        color: #fff;
+        border: none;
+        border-radius: 0px;
+        padding: 0px 0px;
+        cursor: pointer;
+        font-size: 13px;
+    }
+
+    .nav-button:hover {
+        background-color: #7b0707;
+    }
+
+    @media screen and (max-width: 768px) {
+        .weather-container {
+            gap: 15px;
+        }
+
+        .weather-card {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .nav-buttons {
+            top: 5px;
+            right: 5px;
+        }
+    }
+</style>
+
+<script type=""text/javascript"">
+    document.addEventListener(""DOMContentLoaded"", function () {
+        const container = document.querySelector("".weather-container"");
+        const cards = document.querySelectorAll("".weather-card"");
+        const prevButton = document.querySelector("".nav-button.prev"");
+        const nextButton = document.querySelector("".nav-button.next"");
+
+        // If you're dynamically injecting cards, ensure they're loaded
+        if (!container || cards.length === 0) {
+            console.error(""Weather container or weather cards not found."");
+            return;
+        }
+
+        const gap = parseInt(getComputedStyle(container).gap) || 20; // Default gap if not set
+        let cardWidth = cards[0].offsetWidth;
+        let currentIndex = 0;
+
+        // Function to calculate how many cards fit in the current container width
+        function visibleCards() {
+            const containerWidth = document.querySelector("".weather-container-wrapper"").offsetWidth;
+            return Math.max(1, Math.floor(containerWidth / (cardWidth + gap)));
+        }
+
+        // Function to update the container transform
+        function updateTransform() {
+            const offset = -currentIndex * (cardWidth + gap);
+            container.style.transform = `translateX(${offset}px)`;
+            updateButtonStates();
+        }
+
+        // Function to update the disabled state of buttons
+        function updateButtonStates() {
+            prevButton.disabled = (currentIndex === 0);
+            nextButton.disabled = (currentIndex >= cards.length - visibleCards());
+        }
+
+        // Initial state
+        updateButtonStates();
+
+        // Navigation button handlers
+        prevButton.addEventListener(""click"", function () {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateTransform();
+            }
+        });
+
+        nextButton.addEventListener(""click"", function () {
+            if (currentIndex < cards.length - visibleCards()) {
+                currentIndex++;
+                updateTransform();
+            }
+        });
+
+        // Handle window resizing
+        window.addEventListener(""resize"", function () {
+            cardWidth = cards[0].offsetWidth;
+            updateTransform();
+        });
+    });
+</script>
+",1,0
+Footer Socials Block,footer-socials,"<div class=""socials-block"">
+            <a href=""https://www.facebook.com/nguyentuan.hung.3154/""><em class=""fa fa-facebook""></em></a>
+            <a href=""https://www.youtube.com/@Sontungmtp""><em class=""fa fa-youtube""></em></a>
+            <a href=""https://x.com/justCallMeQL""><em class=""fa fa-twitter""></em></a>
+        </div>",1,0
+Home Images Block,home-images-two,"<div class=""home-parallax-block above-margin below-margin"">
+<p>CHỈ TRONG TUẦN NÀY</p>
+<h1>GIẢM GIÁ 20% CHO QUẦN ÁO BÓNG ĐÁ</h1>
+<a class=""action primary"" href=""https://flshop.me/qu-n-ao/ao-bong-da-adidas.html"">MUA NGAY</a>
+</div>",1,0
+Home Services Block,home-services,"<div class=""home-advantage-block"">
+    <div class=""page-main"">
+        <div class=""hab-row"">
+            <div class=""hab-inner"">
+                <div class=""home-advantage-block-inner"">
+                    <span> 
+                        <em class=""fa fa-usd""></em> 
+                    </span>
+                    <p>Hoàn tiền nhanh</p>
+                </div>
+            </div>
+            <div class=""hab-inner"">
+                <div class=""home-advantage-block-inner"">
+                    <span> 
+                        <em class=""fa fa-headphones""></em> 
+                    </span>
+                    <p>Hỗ trợ 24/7</p>
+                </div>
+            </div>
+            <div class=""hab-inner"">
+                <div class=""home-advantage-block-inner"">
+                    <span> 
+                        <em class=""fa fa-undo""></em> 
+                    </span>
+                    <p>Đổi trả miễn phí</p>
+                </div>
+            </div>
+            <div class=""hab-inner"">
+                <div class=""home-advantage-block-inner"">
+                    <span> 
+                        <em class=""fa fa-thumbs-up""></em> 
+                    </span>
+                    <p>Uy tín và chất lượng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>",1,0
+Sidebar add banner,sidebar-add-banner,"<img src=""{{media url=""wysiwyg/advertisement/sidebar-banner.png""}}"" alt="""" />",1,0
+Home ContactUs Block,home-contactus-block,"<div class=""header-content-info"">
+    <span class=""contact-text"">
+        Contact Us
+        <strong>
+            <a href=""tel:+84886698386"">+84886698386</a>
+        </strong>
+    </span>
+</div>",,
