@@ -50,4 +50,4 @@ https://github.com/user-attachments/assets/fe7c8327-a469-4902-9684-e2294ba3affa
 Documents and website introduction slideshow are written in Vietnamese: [Documentation & slideshow](https://drive.google.com/drive/folders/15H2LR8dTrHegt9FsIELs2dQqau5Vcbj3?usp=sharing)
 
 ## Support
-For support, email nguyentuanhung4002@gmail.com.
+For support, email nguyentuanhung4002@gmail.com | flshop166@gmail.com | datmieu2004@gmail.com | lengocquang2554@gmail.com.
